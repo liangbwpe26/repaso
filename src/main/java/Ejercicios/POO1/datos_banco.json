@@ -1,0 +1,35 @@
+{
+  "clientes" : [ {
+    "dni" : "12345678Z",
+    "nombre" : "Liang",
+    "apellido" : "Benalcazar",
+    "correo" : "mat@gmail.com"
+  }, {
+    "dni" : "87654321A",
+    "nombre" : "Yago",
+    "apellido" : "Tortosa",
+    "correo" : "yago@gmail.com"
+  } ],
+  "cuentas" : [ {
+    "titular" : {
+      "dni" : "12345678Z",
+      "nombre" : "Liang",
+      "apellido" : "Benalcazar",
+      "correo" : "mat@gmail.com"
+    },
+    "saldo" : 3710.0,
+    "movimientos" : [ "remesa\t\t\t\t\t\t\t\t| +2250.0€      |  Saldo: 2250.0", "mas dinero\t\t\t\t\t\t\t\t| +2340.0€      |  Saldo: 4590.0", "remesa\t\t\t\t\t\t\t\t| +2300.0€      |  Saldo: 6890.0", "necesito dinero\t\t\t\t\t\t\t\t| -5000.0€      |  Saldo: 5000.0", "hola\t\t\t\t\t\t\t\t| -5000.0€      |  Saldo: 5000.0", "5000\t\t\t\t\t\t\t\t| -5000.0€      |  Saldo: 0.0", "-40\t\t\t\t\t\t\t\t| -40.0€      |  Saldo: -40.0", "mas\t\t\t\t\t\t\t\t| +400.0€      |  Saldo: 360.0", "50\t\t\t\t\t\t\t\t| -50.0€      |  Saldo: 310.0", "mucho\t\t\t\t\t\t\t\t| +3400.0€      |  Saldo: 3710.0" ],
+    "iban" : "ES2332554385272416388759"
+  }, {
+    "titular" : {
+      "dni" : "87654321A",
+      "nombre" : "Yago",
+      "apellido" : "Tortosa",
+      "correo" : "yago@gmail.com"
+    },
+    "saldo" : 7800.0,
+    "movimientos" : [ "ola\t\t\t\t\t\t\t\t| +7800.0€      |  Saldo: 7800.0" ],
+    "iban" : "ES9311764037511251888535"
+  } ],
+  "correos" : [ "mat@gmail.com", "yago@gmail.com" ]
+}
