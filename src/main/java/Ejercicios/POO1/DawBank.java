@@ -2,6 +2,7 @@ package Ejercicios.POO1;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Scanner;
 
@@ -24,9 +25,9 @@ public class DawBank {
 
         while (intentos < 3) {
             System.out.println("--- INGRESO A DAWBANK ---");
-            System.out.println("Ingresa el usuario: ");
+            System.out.print("Ingresa el usuario: ");
             usuario = sc.nextLine();
-            System.out.println("Ingresa la contraseña: ");
+            System.out.print("Ingresa la contraseña: ");
             contrasena = sc.nextLine();
             if (login(usuario, contrasena)) {
                 ingreso = true;
@@ -198,12 +199,13 @@ public class DawBank {
         if (cuenta.getIBAN().equals(iban)) {
             clientevalido = true;
             List<String> movimientos = cuenta.getMovimientos();
+            Collections.reverse(movimientos);
             if (movimientos.isEmpty()) {
                 System.out.println("El cliente no tiene movimientos hechos.");
             } else {
                 System.out.println("Movimientos:");
-                for (int i = 0; i < movimientos.size(); i++) {
-                    System.out.println("#" + (i + 1) + " " + movimientos.get(i));
+                for (int i = 0, num = movimientos.size(); i < movimientos.size(); i++, num--) {
+                    System.out.println("#" + (num) + " " + movimientos.get(i));
                 }
             }
         }
