@@ -2,9 +2,9 @@ package Ejercicios.POO2;
 
 import java.util.Comparator;
 
-public class ComparaSalario implements Comparator {
+public class ComparaSalario implements Comparator<Empleado> {
     @Override
-    public int compare(Object o1, Object o2) {
-        return 0;
+    public int compare(Empleado e1, Empleado e2) {
+        return Double.compare(e1.getSalarioBase(), e2.getSalarioBase());
     }
 }
