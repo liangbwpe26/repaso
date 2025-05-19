@@ -25,7 +25,7 @@ abstract class Empleado {
             throw new IllegalArgumentException("El nombre del empleado no puede estar vacío");
         }
         if (salarioBase < 1100) {
-            throw new IllegalArgumentException("El sueldo base del empleado no puede ser menor al sueldo mínimo");
+            throw new IllegalArgumentException("El sueldo base del empleado no puede ser menor al sueldo mínimo (1100)");
         }
         this.nombre = nombre;
         this.salarioBase = salarioBase;
