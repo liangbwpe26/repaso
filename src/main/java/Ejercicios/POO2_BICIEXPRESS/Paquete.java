@@ -3,16 +3,16 @@ package Ejercicios.POO2_BICIEXPRESS;
 import java.time.LocalDate;
 
 public class Paquete {
-    protected static int idPaquete = 0;
+    protected int idPaquete;
     protected double peso;
     protected LocalDate fechaEstimada;
     protected EstadoEnvio estado;
 
-    public Paquete(double peso) throws IllegalArgumentException {
+    public Paquete(int idPaquete, double peso) throws IllegalArgumentException {
         if (peso <= 0 || peso > 20) {
             throw new IllegalArgumentException("El peso no puede ser negativo o superar los 20 KG.");
         }
-        idPaquete++;
+        this.idPaquete = idPaquete;
         this.peso = peso;
         this.estado = EstadoEnvio.PENDIENTE;
         if (peso > 1 && peso < 5) {

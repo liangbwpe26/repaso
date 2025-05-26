@@ -7,6 +7,7 @@ public class ProbarEmpresa {
     public static void main(String[] args) {
         Dispositivo samsung = new Movil("Samsung");
         Dispositivo asus = new Portatil("Asus");
+        Dispositivo iPhone = new Movil("iPhone 15");
 
         Programador empleado1 = new Programador("Liang", 1400, asus);
         JefeEquipo empleado2 = new JefeEquipo("Manel", 3500, asus);
@@ -20,9 +21,7 @@ public class ProbarEmpresa {
         empleado5.desconectarVPN();
 
         Empresa riotgames = new Empresa("Riot Games");
-        riotgames.setEmpleados(new ArrayList<>(List.of(
-                empleado1, empleado2, empleado3, empleado4, empleado5
-        )));
+        riotgames.setEmpleados(new ArrayList<>(List.of(empleado1, empleado2, empleado3, empleado4, empleado5)));
 
         System.out.println("INFORMACIÓN DE EMPLEADOS:");
         System.out.println("====================================================");
@@ -58,5 +57,7 @@ public class ProbarEmpresa {
             System.out.printf("%d -> Empleado: %s / Salario: %.1f euros%n",
                     pos++, e.getNombre(), e.getSalarioBase());
         }
+
+
     }
 }

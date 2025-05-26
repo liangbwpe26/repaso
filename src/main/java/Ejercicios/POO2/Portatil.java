@@ -28,7 +28,8 @@ public class Portatil implements Dispositivo {
 
     @Override
     public boolean equals(Object obj) {
-        return super.equals(obj);
+        Portatil portatil = (Portatil) obj;
+        return modelo.equals(portatil.getModelo());
     }
 
     public String getModelo() {
